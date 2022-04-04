@@ -1,4 +1,4 @@
-var argButtonName, buttonPaper, buttonRock, buttonTest, scissors;
+let argButtonName, buttonPaper, buttonRock, buttonTest, scissors;
 
 buttonTest = document.getElementById('button-test');
 buttonRock = document.getElementById('button-rock');
@@ -23,7 +23,7 @@ buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 
 scissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
 
-var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+let argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
 
 /**
  * Describe this function...
