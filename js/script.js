@@ -11,6 +11,7 @@ function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
   let playerMove = argButtonName;
+  console.log('ruch gracza to:'+ playerMove);
   const randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('wylosowana liczba to: ' + randomNumber);
   let computerMove = getMoveName(randomNumber);
