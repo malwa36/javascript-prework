@@ -1,12 +1,11 @@
-let argButtonName, buttonPaper, buttonRock, buttonTest, scissors;
 
-buttonTest = document.getElementById('button-test');
 buttonRock = document.getElementById('button-rock');
+buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonPaper = document.getElementById('button-paper');
+buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 scissors = document.getElementById('button-scissors');
-/**
- * Describe this function...
- */
+scissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
+
 const buttonClicked = function(argButtonName, argPlayerMove) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
@@ -18,17 +17,7 @@ const buttonClicked = function(argButtonName, argPlayerMove) {
   console.log('ruch komputera to: ' + computerMove);
   displayResult(playerMove, computerMove);
 }
-buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 
-buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
-
-scissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
-
-let argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
-
-/**
- * Describe this function...
- */
 const getMoveName = function(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
   if (argMoveId == 1) {
@@ -42,9 +31,6 @@ const getMoveName = function(argMoveId) {
   }
 }
 
-/**
- * Describe this function...
- */
 const displayResult = function(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
