@@ -1,9 +1,9 @@
 
-buttonRock = document.getElementById('button-rock');
+let buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
-buttonPaper = document.getElementById('button-paper');
+let buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
-scissors = document.getElementById('button-scissors');
+let scissors = document.getElementById('button-scissors');
 scissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
 
 const buttonClicked = function(argButtonName, argPlayerMove) {
