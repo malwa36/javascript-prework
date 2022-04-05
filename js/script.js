@@ -7,7 +7,7 @@ scissors = document.getElementById('button-scissors');
 /**
  * Describe this function...
  */
-function buttonClicked(argButtonName) {
+const buttonClicked = function(argButtonName, argPlayerMove) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
   let playerMove = argButtonName;
